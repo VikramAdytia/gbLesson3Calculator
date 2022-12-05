@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input type="text" id="val1" value="0">
+    <button onclick="calc(1)">+</button>
+    <button onclick="calc(2)">-</button>
+    <button onclick="calc(3)">*</button>
+    <button onclick="calc(4)">/</button>
+    <input type="text" id="val2" value="0">
+    =
+    <input type="text" id="result" readonly value="0">
+    <input type="text" id="name" readonly value="">
+
+
+    <button onclick="call()">name</button>
+    
+    
+
+<script>
+
+function call() {
+
+    let name = prompt("name?", "any");
+
+    if (name != null) {
+        document.getElementById("name").value = name
+    }
+}
+
+function calc(operation) {
+    switch (operation) {
+        case 1 : 
+            var val1 = parseFloat(document.getElementById("val1").value)
+            var val2 = parseFloat(document.getElementById("val2").value)
+            result = val1 +val2
+            document.getElementById("result").value = result
+            break;
+        case 2 : 
+            var val1 = parseFloat(document.getElementById("val1").value)
+            var val2 = parseFloat(document.getElementById("val2").value)
+            result = val1 -val2
+            document.getElementById("result").value = result
+            break;
+        case 3 : 
+            var val1 = parseFloat(document.getElementById("val1").value)
+            var val2 = parseFloat(document.getElementById("val2").value)
+            result = val1 * val2
+            document.getElementById("result").value = result
+            break;
+        case 4 : 
+            var val1 = parseFloat(document.getElementById("val1").value)
+            var val2 = parseFloat(document.getElementById("val2").value)
+            result = val1 /val2
+            alert("текст ошибки")
+            document.getElementById("result").value = result
+            break;
+    }
+}
+
+</script>
+
+
+</body>
+</html>

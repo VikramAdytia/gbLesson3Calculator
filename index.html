@@ -35,28 +35,22 @@ function call() {
 }
 
 function calc(operation) {
+    var val1 = parseFloat(document.getElementById("val1").value)
+    var val2 = parseFloat(document.getElementById("val2").value)
     switch (operation) {
         case 1 : 
-            var val1 = parseFloat(document.getElementById("val1").value)
-            var val2 = parseFloat(document.getElementById("val2").value)
             result = val1 +val2
             document.getElementById("result").value = result
             break;
         case 2 : 
-            var val1 = parseFloat(document.getElementById("val1").value)
-            var val2 = parseFloat(document.getElementById("val2").value)
             result = val1 -val2
             document.getElementById("result").value = result
             break;
         case 3 : 
-            var val1 = parseFloat(document.getElementById("val1").value)
-            var val2 = parseFloat(document.getElementById("val2").value)
             result = val1 * val2
             document.getElementById("result").value = result
             break;
         case 4 : 
-            var val1 = parseFloat(document.getElementById("val1").value)
-            var val2 = parseFloat(document.getElementById("val2").value)
             result = val1 /val2
             alert("текст ошибки")
             document.getElementById("result").value = result

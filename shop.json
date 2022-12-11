@@ -1,0 +1,30 @@
+[
+    {
+       "id": 0,
+       "name": "uPhone Glass",
+       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+       "imageUrl": "/images/Glass.jpg",
+       "price": 99
+    },
+    {
+       "id": 1,
+       "name": "uPhone 8u",
+       "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+       "imageUrl": "/images/uPhone.png",
+       "price": 999
+    },
+    {
+       "id": 2,
+       "name": "uPhone headphones",
+       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+       "imageUrl": "/images/headphones.jpg",
+       "price": 199
+    },
+    {
+       "id": 3,
+       "name": "uPhone 8uber pack",
+       "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+       "imageUrl": "/images/pack.jpg",
+       "price": [ "this[1].price" , "this[2].price" ]
+    }
+ ]

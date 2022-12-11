@@ -1,0 +1,54 @@
+<!DOCTYPE xml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+<body>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <store>
+        <item sourceSystem="AR" rawId="1">
+            <article>0001</article>
+            <type>standalone</type>
+            <full_name>game about ww1</full_name>
+            <price rawId="AR.1.PR.1">₹1918</price>
+            <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+            <optional>False</optional>
+        </item>
+        <item sourceSystem="AR" rawId="2">
+            <article>0010</article>
+            <type>standalone</type>
+            <full_name>game about ww2</full_name>
+            <price rawId="AR.2.PR.1">₹1939</price>
+            <disciption>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </disciption>
+            <optional>True</optional>
+        </item>
+        <item sourceSystem="AR" rawId="3">
+            <article>0011</article>
+            <type>addon</type>
+            <full_name>game about ww2, addon</full_name>
+            <price rawId="AR.3.PR.1">₹1945</price>
+            <disciption>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </disciption>
+            <optional> True
+                <subitem>AR.2</subitem>
+            </optional>
+        </item>
+        <item sourceSystem="AR" rawId="4">
+            <article>0100</article>
+            <type>bundle</type>
+            <full_name>game about ww2, full</full_name>
+            <price rawId="AR.4.PH.1">AR.2.PR.1 + AR.3.PR.1</price>
+            <disciption>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </disciption>
+            <optional> True
+                <subitem>AR.2</subitem>
+                <subitem>AR.3</subitem>
+            </optional>
+        </item>
+    </store>
+</body>
+</html>
